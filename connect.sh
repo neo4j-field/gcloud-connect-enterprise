@@ -28,6 +28,6 @@ echo "Copy Python Script."
 gcloud compute scp ./hello.py $SERVER:~/
 
 echo "Install Python Driver."
-gcloud compute ssh $SERVER -- "sudo apt update;sudo apt upgrade -y;sudo apt update;sudo apt-get install python3-pip -y;pip3 install neo4j$PYTHON_DRIVER_VERSION;chmod 755 ~/hello.py;"
+gcloud compute ssh $SERVER -- "sudo apt update;sudo apt-get install python3-pip -y;pip3 install neo4j$PYTHON_DRIVER_VERSION;chmod 755 ~/hello.py;"
 
 echo "Script Completed. SSH with gcloud compute ssh <SERVER>"

@@ -69,7 +69,7 @@ class App:
     @staticmethod
     def _find_and_return_person(tx, person_name):
         query = (
-            "MATCH (p:Person) "
+            "PROFILE MATCH (p:Person) "
             "WHERE p.name = $person_name "
             "RETURN p.name AS name"
         )
