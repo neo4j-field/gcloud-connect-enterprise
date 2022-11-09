@@ -1,3 +1,5 @@
+## Note the password to the Aura Enterprise Instance needs to be supplied via environment variable, see the line with password = $PWD4e5c1e1f
+
 #!/usr/bin/env python3
 
 import logging
