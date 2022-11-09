@@ -80,7 +80,7 @@ class App:
 if __name__ == "__main__":
     bolt_url = "neo4j+s://4e5c1e1f.databases.neo4j.io"
     user = "neo4j"
-    password = "qX5u8K_K7UwAn51icIxIr2Zv3IxsMBEitZaMGoeQryw"
+    password = $PWD4e5c1e1f ## This Variable Is Set In Environment Variable ##
     App.enable_log(logging.INFO, sys.stdout)
     app = App(bolt_url, user, password)
     app.create_friendship("Alice", "David", "School")
